@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>팀소개 · 좋은인재연구소</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+  :root{
+    --bg:#ffffff; --bg-soft:#f7f6f3; --border:#e9e9e7; --border-strong:#dbdad5;
+    --accent:#2383e2; --accent-dark:#1a6dc4; --text-main:#37352f; --text-sub:#7c7b76; --radius:10px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:'Pretendard', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', sans-serif; color:var(--text-main); background:var(--bg); line-height:1.6;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
+
+  header{position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.94); border-bottom:1px solid var(--border);}
+  header .wrap{display:flex; align-items:center; justify-content:space-between; height:72px;}
+  .logo{font-size:18px; font-weight:700; letter-spacing:-0.01em;}
+  nav{display:flex; gap:32px;}
+  nav a{font-size:14px; color:var(--text-sub); transition:color .15s;}
+  nav a:hover{color:var(--text-main);}
+  nav a.active{color:var(--accent); font-weight:600;}
+  .header-actions{display:flex; gap:10px; align-items:center;}
+  .btn{display:inline-flex; align-items:center; justify-content:center; padding:9px 18px; border-radius:7px; font-size:14px; font-weight:600; border:1px solid var(--border-strong); cursor:pointer; transition:background .15s, border-color .15s;}
+  .btn-ghost{background:#fff; color:var(--text-main);}
+  .btn-ghost:hover{background:var(--bg-soft);}
+  .btn-primary{background:var(--accent); border:1px solid var(--accent); color:#fff;}
+  .btn-primary:hover{background:var(--accent-dark); border-color:var(--accent-dark);}
+
+  .page-head{padding:56px 0 40px; text-align:center;}
+  .page-head h1{font-size:30px; font-weight:700; letter-spacing:-0.01em; margin-bottom:10px;}
+  .page-head p{font-size:15px; color:var(--text-sub);}
+
+  .team-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:18px; padding-bottom:80px;}
+  .team-card{border:1px solid var(--border); border-radius:var(--radius); padding:24px;}
+  .team-card h3{font-size:17px; font-weight:700; margin-bottom:4px;}
+  .team-card .role{font-size:13px; color:var(--accent); font-weight:600; margin-bottom:12px;}
+  .team-card ul{list-style:none;}
+  .team-card li{font-size:13px; color:var(--text-sub); margin-bottom:4px;}
+
+  .sub-section{padding:0 0 72px;}
+  .sub-head{margin-bottom:20px;}
+  .sub-head h2{font-size:21px; font-weight:700;}
+  .sub-head p{font-size:13.5px; color:var(--text-sub); margin-top:4px;}
+  .rec-list{border-top:1px solid var(--border);}
+  .rec-row{display:grid; grid-template-columns:110px 90px 1fr; gap:14px; align-items:baseline; padding:13px 0; border-bottom:1px solid var(--border);}
+  .rec-row .rd{font-size:12.5px; color:var(--text-sub);}
+  .rec-row .rc{font-size:11.5px; font-weight:600; color:var(--accent); border:1px solid var(--accent); border-radius:100px; padding:2px 9px; justify-self:start;}
+  .rec-row .rc.alt{color:var(--text-sub); border-color:var(--border-strong);}
+  .rec-row .rt{font-size:14px; font-weight:500;}
+  @media (max-width:620px){ .rec-row{grid-template-columns:1fr; gap:2px;} }
+
+  footer{border-top:1px solid var(--border); padding:56px 0 36px; background:var(--bg-soft);}
+  .footer-company{font-size:13px; color:var(--text-sub); line-height:1.9;}
+  .footer-company strong{color:var(--text-main); font-size:14px;}
+
+  @media (max-width:860px){ nav{display:none;} .team-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .team-grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html">좋은인재연구소</a>
+    <nav>
+      <a href="index.html">메인</a>
+      <a href="services.html">서비스 소개</a>
+      <a href="team.html" class="active">팀소개</a>
+      <a href="contact.html">문의하기</a>
+    </nav>
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-primary">문의하기</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <!-- ✏️ 수정: 페이지 타이틀 / 부제목 -->
+    <h1>[팀소개 페이지 타이틀을 입력하세요]</h1>
+    <p>[팀소개 페이지 부제목을 입력하세요]</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <!-- ✏️ 수정: 컨설턴트 카드 (블록 통째로 복사/삭제해서 인원 조절 가능) -->
+  <div class="team-grid">
+    <div class="team-card">
+      <h3>김*진</h3>
+      <div class="role">현) 공인노무사 / HR 컨설턴트</div>
+      <ul>
+        <li>인사노무 컴플라이언스</li>
+        <li>인사 전략 수립</li>
+        <li>인사 제도 설계(평가, 보상 등)</li>
+      </ul>
+    </div>
+    <div class="team-card">
+      <h3>최*호</h3>
+      <div class="role">전) 외국계 화학기업 HRD 담당자</div>
+      <ul>
+        <li>교육전략 및 제도 설계</li>
+        <li>기업 가치 및 인재상 수립</li>
+        <li>조직문화 컨설팅</li>
+        <li>커리어 컨설팅</li>
+      </ul>
+    </div>
+    <div class="team-card">
+      <h3>김*근</h3>
+      <div class="role">현) 코스피 상장사 제조업 HR 담당자</div>
+      <ul>
+        <li>채용 평가 설계, 면접관 교육</li>
+        <li>AI, AX 컨설팅</li>
+        <li>커리어 컨설팅</li>
+      </ul>
+    </div>
+    <div class="team-card">
+      <h3>강*현</h3>
+      <div class="role">현) 중견기업 HRPB 담당자</div>
+      <ul>
+        <li>평가 및 보상 설계</li>
+        <li>커리어 컨설팅</li>
+      </ul>
+    </div>
+    <div class="team-card">
+      <h3>한*일</h3>
+      <div class="role">전) 커머스 기업 인사팀장</div>
+      <ul>
+        <li>소기업 채용 컨설팅 및 프로세스 설계</li>
+        <li>비즈니스 매너 및 일하는 방식 교육</li>
+        <li>커리어 컨설팅</li>
+      </ul>
+    </div>
+    <!-- 인원을 추가하려면 위 team-card 블록을 하나 더 복사해서 이름/직함/전문분야만 바꾸세요. -->
+  </div>
+</div>
+
+<!-- ============ 네트워크데이 아카이브 ============ -->
+<section class="sub-section">
+  <div class="wrap">
+    <div class="sub-head">
+      <h2>네트워크데이 아카이브</h2>
+      <p>[네트워크데이 소개 한 줄을 입력하세요]</p>
+    </div>
+    <!-- ✏️ 수정: 회차 추가/삭제는 rec-row 블록을 통째로 복사/삭제 -->
+    <div class="rec-list">
+      <div class="rec-row"><span class="rd">26.06.20</span><span class="rc">노동법</span><span class="rt">2026년 연차휴가, 판례까지</span></div>
+      <div class="rec-row"><span class="rd">26.05.16</span><span class="rc">채용</span><span class="rt">예산 없이 온보딩을 진행한다고?</span></div>
+      <div class="rec-row"><span class="rd">26.04.25</span><span class="rc">AI</span><span class="rt">HR이 만드는 AI 문화</span></div>
+      <div class="rec-row"><span class="rd">26.03.28</span><span class="rc">채용</span><span class="rt">진심으로 승부하는 중소기업 채용 성공 공식</span></div>
+      <div class="rec-row"><span class="rd">26.02.28</span><span class="rc">노동법</span><span class="rt">직장 내 괴롭힘 & 성희롱 사건에서의 HR의 역할</span></div>
+      <div class="rec-row"><span class="rd">26.01.24</span><span class="rc">노동법</span><span class="rt">2026년 달라지는 실무 노동법</span></div>
+      <div class="rec-row"><span class="rd">26.01.24</span><span class="rc">조직문화</span><span class="rt">회사에서 행복을 말한다고?</span></div>
+      <div class="rec-row"><span class="rd">25.11.29</span><span class="rc">평가보상</span><span class="rt">평가보상 실무사례 분석</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 교육 실적 ============ -->
+<section class="sub-section">
+  <div class="wrap">
+    <div class="sub-head">
+      <h2>교육 실적</h2>
+      <p>[교육 실적 소개 한 줄을 입력하세요]</p>
+    </div>
+    <!-- ✏️ 수정: 실적 추가/삭제는 rec-row 블록을 통째로 복사/삭제. rc alt = 외부연계, rc(기본) = 자체기획 -->
+    <div class="rec-list">
+      <div class="rec-row"><span class="rd">26.06.20</span><span class="rc">자체기획</span><span class="rt">비개발직군을 위한 AI × DATA 원데이 클래스</span></div>
+      <div class="rec-row"><span class="rd">26.01.24</span><span class="rc">자체기획</span><span class="rt">빠른 취업을 위한 취업 근육 키우기</span></div>
+      <div class="rec-row"><span class="rd">26.07.10</span><span class="rc alt">외부연계</span><span class="rt">영남대학교 · 생산·품질 직무 모의면접</span></div>
+      <div class="rec-row"><span class="rd">26.07.03</span><span class="rc alt">외부연계</span><span class="rt">현대건설기술교육원 · AI 자소서 작성 특강</span></div>
+      <div class="rec-row"><span class="rd">26.06.22</span><span class="rc alt">외부연계</span><span class="rt">대구가톨릭대학교 · 일머리 키우기 온라인 강의</span></div>
+      <div class="rec-row"><span class="rd">26.05.19</span><span class="rc alt">외부연계</span><span class="rt">호서대학교 · 자기소개서 · 이력서 특강</span></div>
+      <div class="rec-row"><span class="rd">26.02.02~04</span><span class="rc alt">외부연계</span><span class="rt">영남대학교 · 청정에너지 커리어 캠프 파견</span></div>
+      <div class="rec-row"><span class="rd">26.01.13</span><span class="rc alt">외부연계</span><span class="rt">그룹바이 취업박람회 · 스타트업 박람회 컨설턴트 초빙</span></div>
+      <div class="rec-row"><span class="rd">25.11.25</span><span class="rc alt">외부연계</span><span class="rt">현대건설기술교육원 · AI 자소서 작성 특강</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-company">
+      <strong>좋은인재연구소</strong><br>
+      경기도 용인시 수지구 용구대로2790번길 7, 302-S315호(죽전동)<br>
+      대표 김진 · 사업자등록번호 893-09-03270<br>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
