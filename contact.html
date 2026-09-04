@@ -28,6 +28,9 @@
   .btn-ghost:hover{background:var(--bg-soft);}
   .btn-primary{background:var(--accent); border:1px solid var(--accent); color:#fff;}
   .btn-primary:hover{background:var(--accent-dark); border-color:var(--accent-dark);}
+  .mnav-toggle{display:none;}
+  .hamburger{display:none; flex-direction:column; gap:5px; cursor:pointer; padding:6px; background:none; border:0;}
+  .hamburger span{display:block; width:22px; height:2px; background:var(--text-main); transition:transform .25s, opacity .2s;}
 
   .page-head{padding:64px 0 8px; text-align:center;}
   .page-head h1{font-size:30px; font-weight:700; letter-spacing:-0.01em; margin-bottom:10px;}
@@ -43,7 +46,21 @@
   .footer-company{font-size:13px; color:var(--text-sub); line-height:1.9;}
   .footer-company strong{color:var(--text-main); font-size:14px;}
 
-  @media (max-width:860px){ nav{display:none;} }
+  @media (max-width:860px){
+    .hamburger{display:flex;}
+    nav{
+      display:flex; flex-direction:column; gap:0;
+      position:fixed; top:72px; left:0; right:0;
+      background:#fff; border-bottom:1px solid var(--border);
+      max-height:0; overflow:hidden;
+      transition:max-height .25s ease;
+    }
+    nav a{padding:14px 24px; border-top:1px solid var(--border); font-size:15px;}
+    .mnav-toggle:checked ~ nav{max-height:320px;}
+    .mnav-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+    .mnav-toggle:checked ~ .hamburger span:nth-child(2){opacity:0;}
+    .mnav-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  }
 </style>
 </head>
 <body>
@@ -51,19 +68,21 @@
 <header>
   <div class="wrap">
     <a class="logo" href="index.html">좋은인재연구소</a>
+    <input type="checkbox" id="mnav" class="mnav-toggle">
     <nav>
       <a href="index.html">메인</a>
       <a href="services.html">서비스소개</a>
       <a href="team.html">팀소개</a>
       <a href="contact.html" class="active">문의하기</a>
     </nav>
+    <label class="hamburger" for="mnav" aria-label="메뉴 열기"><span></span><span></span><span></span></label>
   </div>
 </header>
 
 <section class="page-head">
   <div class="wrap">
     <!-- ✏️ 수정: 페이지 타이틀 / 부제목 -->
-    <h1>여러분의 HR에 도움을 드릴 수 있습니다</h1>
+    <h1>여러분의 HR을 도와드리겠습니다</h1>
     <p>좋은인재연구소는 맞춤형 서비스를 제공합니다</p>
     <p>문의사항이 있으시면 편하게 메일 또는 카카오톡으로 연락주세요</p>
   </div>
