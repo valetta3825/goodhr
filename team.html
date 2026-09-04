@@ -47,7 +47,7 @@
   .rec-list{border-top:1px solid var(--border);}
   .rec-row{display:grid; grid-template-columns:110px 90px 1fr; gap:14px; align-items:baseline; padding:13px 0; border-bottom:1px solid var(--border);}
   .rec-row .rd{font-size:12.5px; color:var(--text-sub);}
-  .rec-row .rc{font-size:11.5px; font-weight:600; color:var(--accent); border:1px solid var(--accent); border-radius:100px; padding:2px 9px; justify-self:start;}
+  .rec-row .rc{font-size:11.5px; font-weight:600; color:var(--accent); border:1px solid var(--accent); border-radius:4px; padding:2px 9px; justify-self:start;}
   .rec-row .rc.alt{color:var(--text-sub); border-color:var(--border-strong);}
   .rec-row .rt{font-size:14px; font-weight:500;}
   @media (max-width:620px){ .rec-row{grid-template-columns:1fr; gap:2px;} }
@@ -67,7 +67,7 @@
     <a class="logo" href="index.html">좋은인재연구소</a>
     <nav>
       <a href="index.html">메인</a>
-      <a href="services.html">서비스 소개</a>
+      <a href="services.html">서비스소개</a>
       <a href="team.html" class="active">팀소개</a>
       <a href="contact.html">문의하기</a>
     </nav>
@@ -80,8 +80,8 @@
 <section class="page-head">
   <div class="wrap">
     <!-- ✏️ 수정: 페이지 타이틀 / 부제목 -->
-    <h1>[팀소개 페이지 타이틀을 입력하세요]</h1>
-    <p>[팀소개 페이지 부제목을 입력하세요]</p>
+    <h1>HR 현업 시니어들로만 구성된 전문가 집단</h1>
+    <p>총 경력 60여년의 HR 인사이트로 레버리지 하세요</p>
   </div>
 </section>
 
@@ -142,10 +142,12 @@
   <div class="wrap">
     <div class="sub-head">
       <h2>네트워크데이 아카이브</h2>
-      <p>[네트워크데이 소개 한 줄을 입력하세요]</p>
+      <p>좋은인재연구소는 매달 오프라인 네트워킹을 합니다.</p>
     </div>
     <!-- ✏️ 수정: 회차 추가/삭제는 rec-row 블록을 통째로 복사/삭제 -->
     <div class="rec-list">
+      <div class="rec-row"><span class="rd">26.08.29</span><span class="rc">조직문화</span><span class="rt">팀이 스스로 바뀌기 시작했다 : 수퍼팀을 만드는 조직문화 프로그램</span></div>
+      <div class="rec-row"><span class="rd">26.07.25</span><span class="rc">조직문화</span><span class="rt">대화 하나로 조직이 달라진다 : 원온원 실전 설계</span></div>
       <div class="rec-row"><span class="rd">26.06.20</span><span class="rc">노동법</span><span class="rt">2026년 연차휴가, 판례까지</span></div>
       <div class="rec-row"><span class="rd">26.05.16</span><span class="rc">채용</span><span class="rt">예산 없이 온보딩을 진행한다고?</span></div>
       <div class="rec-row"><span class="rd">26.04.25</span><span class="rc">AI</span><span class="rt">HR이 만드는 AI 문화</span></div>
@@ -163,7 +165,7 @@
   <div class="wrap">
     <div class="sub-head">
       <h2>교육 실적</h2>
-      <p>[교육 실적 소개 한 줄을 입력하세요]</p>
+      <p>고객사 맞춤 취업&실무교육 진행 가능합니다</p>
     </div>
     <!-- ✏️ 수정: 실적 추가/삭제는 rec-row 블록을 통째로 복사/삭제. rc alt = 외부연계, rc(기본) = 자체기획 -->
     <div class="rec-list">
